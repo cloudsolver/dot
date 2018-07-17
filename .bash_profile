@@ -35,7 +35,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # Cloud Provide Selection
 cloud () {
-. /Users/n0110643/scripts/cloud.sh
+. $HOME/n0110643/scripts/cloud.sh
 }
 # AWS
 complete -C '/usr/local/bin/aws_completer' aws
