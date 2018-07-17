@@ -11,6 +11,8 @@ alias build='mvn clean package'
 alias run='mvn spring-boot:run'
 alias 'cd..'='cd ..'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias newdb='$HOME/ssh/connect-drd-newdb.sh'
+alias subl='open =a /Applications/Sublime\ Text\ 3.app'
 
 #sudo killall VDCAssistant
 export MVN_HOME=$HOME/tools/apache-maven-3.3.9
@@ -44,5 +46,7 @@ complete -C '/usr/local/bin/aws_completer' aws
 md(){
 pandoc $1 | lynx -stdin
 }
+#AWS Auto-complete
+complete -C '/usr/local/bin/aws_completer' aws
 
-export PATH=/Users/n0110643/.nvm/versions/node/v8.11.1/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/n0110643/tools/apache-maven-3.3.9/bin:/Users/n0110643/tools/mongodb-osx-x86_64-3.4.2/bin:/Users/n0110643/tools/apache-maven-3.3.9/bin:/Users/n0110643/tools/mongodb-osx-x86_64-3.4.2/bin:/Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/bin:/Users/n0110643/.vimpkg/bin
+export PATH=$HOME/.nvm/versions/node/v8.11.1/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$HOME/tools/apache-maven-3.3.9/bin:$HOME/tools/mongodb-osx-x86_64-3.4.2/bin:$HOME/tools/apache-maven-3.3.9/bin:$HOME/tools/mongodb-osx-x86_64-3.4.2/bin:/Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/bin:$HOME/.vimpkg/bin
