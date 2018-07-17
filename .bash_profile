@@ -13,12 +13,12 @@ alias 'cd..'='cd ..'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 #sudo killall VDCAssistant
-export MVN_HOME=/Users/n0110643/tools/apache-maven-3.3.9
-export MONGO_HOME=/Users/n0110643/tools/mongodb-osx-x86_64-3.4.2
+export MVN_HOME=$HOME/tools/apache-maven-3.3.9
+
 export PATH=$PATH:$MVN_HOME/bin:$MONGO_HOME/bin
 
-export MVN_HOME=/Users/n0110643/tools/apache-maven-3.3.9
-export MONGO_HOME=/Users/n0110643/tools/mongodb-osx-x86_64-3.4.2
+export MVN_HOME=$HOME/tools/apache-maven-3.3.9
+export MONGO_HOME=$HOME/tools/mongodb-osx-x86_64-3.4.2
 export PATH=$PATH:$MVN_HOME/bin:$MONGO_HOME/bin
 
 
@@ -35,7 +35,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # Cloud Provide Selection
 cloud () {
-. $HOME/n0110643/scripts/cloud.sh
+. $HOME/scripts/cloud.sh
 }
 # AWS
 complete -C '/usr/local/bin/aws_completer' aws
